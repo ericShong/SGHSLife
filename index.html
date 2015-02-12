@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Manage SGHSLife</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='/styles.css' rel='stylesheet'>
+	</head>
+	<body>
+		<div id='container'>
+			<form action='/' method="POST" id='form' class='section'>
+				<h1>Add New Contact</h1>
+					<p>
+						<input type='text' name='name' placeholder='First Name' id="fname"></input>
+						<input type='text' name='name' placeholder='Last Name' id="lname"></input>
+					</p>
+					<p>
+						<input type='text' name='phone' placeholder='phone 6261234567' id="phone"></input>
+						<input type='text' name='email' placeholder='email' id="email"></input>
+					</p>
+					<p>
+						<input type='text' name='role' placeholder='description' id="role"></input>
+					</p>
+
+				<div id="submit" class='button'>Submit</div>
+			<div id="result"></div>
+			</form>
+			<div id="notificationsSection" class='section'>
+				<h1>Notifications</h1>
+				<div id="notificationsList"></div>
+				<div id='removeNotification' class='button'>Remove</div>
+				<br />
+				<input type='text' id='newNotification' placeholder='Add a new notification' style='width:600px;'></input>
+				<div id='addNotification' class='button'>Add</div>
+			</div>
+		</div>
+	<script src="/contact.js"></script>
+	<script src="/notifications.js"></script>
+	</body>
+</html>
